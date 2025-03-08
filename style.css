@@ -1,0 +1,188 @@
+/* This is css comment */
+/* CSS is the language we use to style an HTML document.
+ CSS stands for Cascading Style Sheets. */
+/* selector {               
+    property : property value
+ }  */
+/*############### element selectors #################*/
+p {
+
+    /* ##########3Color property############ */
+    /* The color property is used to set the color of the text. The color is specified by:
+
+a color name - like "red"
+a HEX value - like "#ff0000"
+an RGB value - like "rgb(255,0,0)" */
+  color: red;
+  text-align: center;
+  /* The text-align property is used to set the horizontal alignment of a text. */
+}
+/* id selectors */
+#para1 {
+  color: rgb(141, 209, 74);
+}
+/* element with class selectors also we can use only class selectors */
+p.para {
+  background-color: #fad3d3;
+  color: rgb(217, 36, 36);
+}
+/* we can use multiple selectors at one time */
+p,h1 {
+  text-align: center;
+  color: red;
+}
+/* This is first child selectors by this ol's first elemet style */
+ol :first-child {
+  color: rgb(37, 37, 178);
+}
+/* This is nth child selectors by this ol's nth value elemet style */
+
+ol :nth-child(2) {
+  list-style-type: square;
+}
+/* #########height an width############# */
+.box {
+  height: 20px;
+  width: 50px;
+}
+/*################ Padding and margin############ */
+/* padding : top right bottem left  */
+.box {
+  padding: 8px 2px 6px 3px;
+  background-color: rgb(210, 210, 48);
+}
+/* #########Border######### */
+/* The border-style property specifies what kind of border to display.
+
+The following values are allowed:
+
+dotted - Defines a dotted border
+dashed - Defines a dashed border
+solid - Defines a solid border
+double - Defines a double border
+groove - Defines a 3D grooved border. The effect depends on the border-color value
+ridge - Defines a 3D ridged border. The effect depends on the border-color value
+inset - Defines a 3D inset border. The effect depends on the border-color value
+outset - Defines a 3D outset border. The effect depends on the border-color value
+none - Defines no border
+hidden - Defines a hidden border */
+.box2 {
+  background-color: rgb(39, 184, 39);
+  border: 2px solid black;
+}
+.dotted {
+  border-style: dotted;
+}
+.dashed {
+  border-style: dashed;
+}
+.solid {
+  border-style: solid;
+}
+.double {
+  border-style: double;
+}
+.groove {
+  border-style: groove;
+}
+.ridge {
+  border-style: ridge;
+}
+.inset {
+  border-style: inset;
+}
+.outset {
+  border-style: outset;
+}
+.none {
+  border-style: none;
+}
+.hidden {
+  border-style: hidden;
+}
+.mix {
+  border-style: dotted dashed solid double;
+}
+.boder > p {
+  color: black;
+  margin: 5px;
+}
+/*############# Font in css########### */
+/* In CSS, we use the font-family property to specify the font of a text. */
+/* example;Serif Sans-serif, Monospace, Cursive ,Fantasy  */
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p.font {
+  font-style: italic;
+}
+p.font1 {
+  /* font-weight:100-900; */
+  font-weight: bold;
+}
+p.font2 {
+  font-variant: small-caps;
+}
+p.font3 {
+  font-size: 14px;
+}
+p.font4 {
+    font-size: 1.875em; /* 30px/16=1.875em */
+}
+/* The font property is a shorthand property for:
+
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family */
+p.b {
+    font: italic small-caps bold 12px/30px Georgia, serif;
+  }
+
+  /* #############Text properties########## */
+  h2 {
+    text-align: left;
+  }
+  
+  .right {
+    text-align: right;
+  }
+  div.box2 {
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+  }
+.box3{
+    background-color: gray;
+    height: 80px;
+    width: 100px;
+    vertical-align:baseline;
+}
+.line {
+    text-decoration: overline;
+  }
+  
+  .line2{
+    text-decoration: line-through;
+    text-decoration-color: blue;
+    text-decoration-style: solid;
+  }
+  
+  .line3 {
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-style: dotted;
+    text-decoration-style: double;
+
+  }
+  
+  p.ex {
+    text-decoration: overline underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 25%;
+    margin: 20px;
+
+  }
